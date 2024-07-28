@@ -1,0 +1,254 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Mock API",
+      "description": "A mock API for testing Ocelot configuration generation"
+    },
+    "host": "localhost:5000",
+    "basePath": "/api",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/products": {
+        "get": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Get all products",
+          "responses": {
+            "200": {
+              "description": "A list of products."
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Create a new product",
+          "parameters": [
+            {
+              "name": "product",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Product"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Product created successfully."
+            }
+          }
+        }
+      },
+      "/products/{productId}": {
+        "get": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Get a product by ID",
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A single product."
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Update a product by ID",
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "product",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Product"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Product updated successfully."
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Products"
+          ],
+          "summary": "Delete a product by ID",
+          "parameters": [
+            {
+              "name": "productId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Product deleted successfully."
+            }
+          }
+        }
+      },
+      "/orders": {
+        "get": {
+          "tags": [
+            "Orders"
+          ],
+          "summary": "Get all orders",
+          "responses": {
+            "200": {
+              "description": "A list of orders."
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Orders"
+          ],
+          "summary": "Create a new order",
+          "parameters": [
+            {
+              "name": "order",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Order"
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Order created successfully."
+            }
+          }
+        }
+      },
+      "/orders/{orderId}": {
+        "get": {
+          "tags": [
+            "Orders"
+          ],
+          "summary": "Get an order by ID",
+          "parameters": [
+            {
+              "name": "orderId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "A single order."
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Orders"
+          ],
+          "summary": "Update an order by ID",
+          "parameters": [
+            {
+              "name": "orderId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            },
+            {
+              "name": "order",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Order"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Order updated successfully."
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "Orders"
+          ],
+          "summary": "Delete an order by ID",
+          "parameters": [
+            {
+              "name": "orderId",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "204": {
+              "description": "Order deleted successfully."
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Order": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "productId": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "totalPrice": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+  

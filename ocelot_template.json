@@ -1,0 +1,31 @@
+{
+  "Routes": [
+    {
+    "DownstreamPathTemplate": "DownStreamPath",
+    "DownstreamScheme": "http",
+    "DownstreamHostAndPorts": [
+      {
+        "Host": "TempDownStreamHost",
+        "Port": 5000
+      }
+    ],
+    "UpstreamPathTemplate": "UpStreamPath",
+    "UpstreamHttpMethod": [ "UpStreamMethod" ],
+    "AuthenticationOptions": 
+    {
+      "AuthenticationProviderKey": "Bearer",
+      "AllowedScopes": []
+    },
+    "RateLimitOptions": {
+      "ClientWhitelist": [],
+      "EnableRateLimiting": true,
+      "Period": "1m",
+      "PeriodTimespan": 60,
+      "Limit": 3
+    },
+    "RouteIsCaseSensitive": true,
+    "SwaggerKey": "base"
+  }
+  ]
+}
+  

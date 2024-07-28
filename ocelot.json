@@ -1,0 +1,274 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/products",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/products",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/products",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/products",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/products/{productId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/products/{productId}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/products/{productId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/products/{productId}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/products/{productId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/products/{productId}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/orders",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/orders",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/orders",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/orders/{orderId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/orders/{orderId}",
+      "UpstreamHttpMethod": [
+        "GET"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/orders/{orderId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/orders/{orderId}",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    },
+    {
+      "DownstreamPathTemplate": "/orders/{orderId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "TempDownStreamHost",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/orders/{orderId}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 60,
+        "Limit": 3
+      },
+      "RouteIsCaseSensitive": true,
+      "SwaggerKey": "base"
+    }
+  ]
+}
