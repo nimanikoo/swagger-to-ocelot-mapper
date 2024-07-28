@@ -203,11 +203,7 @@ Total routes failed to generate: 0
   }
 }
 
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
+```
+### Contributing
+```
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
