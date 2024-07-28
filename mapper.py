@@ -75,9 +75,9 @@ def main(swagger_url, swagger_path, template_path, output_path):
     logging.info(f"Routes failed to generate: {failure_count}")
 
 if __name__ == "__main__":
-    swagger_url = None  # or 'replace your swagger/v1/swagger.json url' if you want to use the URL
-    swagger_path = 'swagger.json'  # Path to the mock Swagger JSON file
-    template_path = 'ocelot_template.json'  # Path to the Ocelot template file
-    output_path = 'ocelot.json'
+    swagger_url = os.environ.get('SWAGGER_URL', None)  # or 'replace your swagger/v1/swagger.json url' if you want to use the URL
+    swagger_path = os.environ.get('SWAGGER_PATH', 'swagger.json')  # Path to the mock Swagger JSON file
+    template_path = os.environ.get('TEMPLATE_PATH', 'ocelot_template.json')  # Path to the Ocelot template file
+    output_path = os.environ.get('OUTPUT_PATH', 'ocelot.json')
 
     main(swagger_url, swagger_path, template_path, output_path)

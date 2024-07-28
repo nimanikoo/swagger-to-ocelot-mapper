@@ -50,6 +50,11 @@ A tool for generating Ocelot API Gateway configuration from Swagger (OpenAPI) sp
 - `template_path` (Required): Path to the Ocelot template JSON file. Example: `ocelot_template.json`
 - `output_path` (Optional): Path to save the generated Ocelot JSON file. Example: `ocelot.json`
 
+You can use `env` sample file to define your own values then use command below to export all variables into the environment:
+```sh
+export $(grep -v '^#' env | xargs)
+```
+
 ### Example Usage
 
 **Using Swagger URL:**
