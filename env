@@ -1,0 +1,4 @@
+SWAGGER_URL=https://example.com
+SWAGGER_PATH=swagger.json
+TEMPLATE_PATH=template.json
+OUTPUT_PATH=output.json
